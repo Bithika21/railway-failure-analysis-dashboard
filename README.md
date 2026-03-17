@@ -1,39 +1,35 @@
 # 🚆 Railway Failure Analysis Dashboard
 
 ## 📌 Project Overview
-This project focuses on analyzing railway failure datasets to identify patterns, trends, and operational insights for improving system reliability.
+This project analyzes railway failure data to identify patterns, trends, and operational issues to improve system reliability.
 
 ---
 
-## 🛠 Tools & Technologies
+## 🎯 Objective
+- Identify major failure causes  
+- Analyze failure trends over time  
+- Improve railway system performance  
+
+---
+
+## 🛠️ Tools & Technologies
 - SQL  
-- Microsoft Excel  
 - Power BI  
+- Excel  
 
 ---
 
-## 📊 Key Analysis Performed
-- Incident count analysis across railway booths  
-- Failure category distribution  
-- Time-based trend analysis  
-- Identification of recurring failure patterns  
+## 📊 Key Insights
+- Identified most frequent failure types  
+- Found peak failure time periods  
+- Highlighted areas needing maintenance  
 
 ---
 
-## 📈 Dashboard Insights
-- Visualized failure trends using bar charts, pie charts, and line graphs  
-- Monitored system performance and operational KPIs  
-- Highlighted high-risk areas for failure occurrences  
+## 📁 Dataset
+- Railway failure dataset (sample)
 
 ---
 
-## 🎯 Outcome
-Developed interactive dashboards to support data-driven decision-making and improve railway system performance.
-
----
-
-## 📎 Use Case
-This project can help railway authorities:
-- Monitor failures efficiently  
-- Improve maintenance planning  
-- Reduce operational risks  
+## 📌 Conclusion
+This project helps improve railway reliability by providing actionable insights from failure data.
