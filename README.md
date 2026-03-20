@@ -22,6 +22,7 @@ This project analyzes railway system failures to identify patterns, root causes,
 
 ## Tools & Technologies
 - Power BI  
+- SQL  
 - Excel  
 
 ---
@@ -34,6 +35,34 @@ This project analyzes railway system failures to identify patterns, root causes,
 
 ---
 
+## Sample SQL Queries
+
+```sql
+-- Count failures by component
+SELECT component, COUNT(*) AS failure_count
+FROM failure_data
+GROUP BY component
+ORDER BY failure_count DESC;
+
+-- Failure trend over time
+SELECT DATE(failure_date) AS date, COUNT(*) AS total_failures
+FROM failure_data
+GROUP BY DATE(failure_date)
+ORDER BY date;
+
+-- Identify high-risk components
+SELECT component
+FROM failure_data
+GROUP BY component
+HAVING COUNT(*) > 50;
+
+-- Total downtime analysis
+SELECT SUM(downtime) AS total_downtime
+FROM failure_data;
+```
+
+---
+
 ## Key Insights
 - Identified high-frequency failure components  
 - Detected regions with maximum system failures  
@@ -43,4 +72,4 @@ This project analyzes railway system failures to identify patterns, root causes,
 ---
 
 ## Note
-This project demonstrates data analysis and visualization using Power BI. The dashboard is based on structured failure datasets to simulate real-world railway system analysis.
+This project demonstrates data analysis and visualization using Power BI along with SQL-based analysis for identifying failure patterns.
